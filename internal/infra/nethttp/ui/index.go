@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/acme-corp-tech/service-starter-kit/resources/static"
+	"github.com/acme-corp-tech/payment/resources/static"
 	"github.com/vearutop/statigz"
 	"github.com/vearutop/statigz/brotli"
 )
