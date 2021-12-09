@@ -1,6 +1,8 @@
 @startuml "payment_relations"
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-Rel(payment, payment_db, "Stores something")
+Rel(payment_service, order_service, "Updates order status")
+Rel(payment_service, payment_provider, "Redirects to payment provider UI")
+Rel(payment_provider, payment_service, "Receives payment")
 
 @enduml

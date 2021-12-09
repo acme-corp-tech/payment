@@ -2,8 +2,7 @@
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
 System_Boundary(payment_system, "[[https://github.com/acme-corp-tech/architecture/wiki/payment_system.svg Payment]]") {
-    Container(payment, "Payment", "Go", "Change Me", $sprite="go")
-    ContainerDb(payment_db, "Payment Database", "MySQL", "", $sprite="mysql")
+    Container(payment_service, "Payment Service", "Go", "Integrates with external payment providers", $sprite="go")
 }
 
 @enduml
